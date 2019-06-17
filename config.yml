@@ -1,0 +1,25 @@
+message: This is a message defined in the configuration file config.yaml.
+messageRepetitions: 3
+database:
+       driverClass: com.mysql.jdbc.Driver
+       user: phonebookuser
+       password: phonebookpassword
+       url: jdbc:mysql://localhost/phonebook
+logging:
+  level: INFO
+  loggers:
+    rooms: DEBUG
+server:
+  applicationContextPath: /rooms-api
+  adminContextPath: /admin
+  applicationConnectors:
+  - type: http 
+    port: 8282
+  adminConnectors:
+  - type: http
+    port: 8283
+appName : Rooms-api-demo
+redis:
+  hostname: localhost
+  port: 6379
+ 
